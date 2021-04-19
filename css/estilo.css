@@ -45,23 +45,32 @@ header{
     font-family: 'Roboto', sans-serif;
 }
 
+/* MAIN */
+
 .container-banner{
-    height: 420px;
-    position:relative;
+    height: 600px;
+    background-image: url(../assets/banner-img1.png);
+    background-repeat: no-repeat;
+    margin-top: -3px;
+    background-size: cover;
 }
 
-.banner-img{
-    width:100%;
-    margin-top: -2px;
+.container-conteudo-banner{
+    display: flex;
+    justify-content: end;
+    margin: 0px auto;
+    height: 100%;
+    width: auto;
+
 }
 
 .conteudo-banner{
-    position: absolute;
-    top: 88px;
-    right: 130px;
     display: flex;
     flex-direction: column;
-    text-align: center;
+    width: 645px;
+    height: 350px;
+    align-items: center;
+    margin: auto 0px;
 }
 
  h1{
@@ -75,7 +84,7 @@ header{
     font-size: 18px;
     font-family: 'Roboto', sans-serif;
     color: white;
-    margin-top: -6px;
+    text-align: center;
 }
 
 .botao-inscrever{
@@ -88,28 +97,343 @@ header{
     border-radius: 10px;
     width: 207px;
     height: 51px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
     margin-top: 100px;
-    margin-left: 110px;
     border-color: black;
     border-style: solid;
     border-width: thin;
+    text-align: center;
 }
     
 .container-img{
     height: 132px;
     background-color: #413C49;
-    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .img-jogos{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+}
+
+.ligas{
+    width: 100%;
+    height: 520px;
+    background-image: url(../assets/bg-lol\ 1.png);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.box-retangulo{
+    clip-path: polygon(100% 0, 100% 89%, 0 100%, 0 9%);
+    background-color: #413C49;
+    height: 100%;
+    width: 100%;
+}   
+
+.conteudo-container{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.conteudo-retangulo{
+    width: 600px;
+}
+
+h2{
+    color: white;
+    font-size: 35px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.conteudo-retangulo span{
+    color: white;
+    font-size: 20px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.img-personagem{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width:843px;
+}
+
+.partidas-aovivo{
+    display: flex;
+    background-color:#413C49;
+    width: 100%;
+    height: 132px;
+}
+
+.conteudo-box-partidas{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo-box-partidas span{
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 89px;
+}
+
+.noticias-partidas{
+    height: 975px;
+    width: 100%;
+    background-color: #1E1C21;
+}
+
+.container-noticias-partidas{
+    display: flex;
+    justify-content: space-between;
+    height: 750px;
+}
+
+.container-todas-noticias{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+    width: 810px;
+    margin-top: 90px;
+    align-items: center;
+}
+
+.titulos{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -30px
+}
+
+.titulos span{
+    color: white;
+    font-size: 30px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+
+.container-noticias{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+
+.box-noticias{
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 200px; 
+}
+
+.img-noticias{
+    height: 200px;
+    width: 115%;
+}
+
+.conteudo-noticia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:url(../assets/fundo-noticia.png);
+    width: 240px;
+    height: 304px;
+}
+
+.conteudo-noticia span{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    width: 165px;
+    text-align: start;
+    text-transform: uppercase;
+    margin-bottom: 18px;
+}
+
+.conteudo-noticia p{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    width: 153px;
+}
+
+.container-proximos-jogos{
+    background-image: url(../assets/fundo-proximos-jogos.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 232px;
+    height: 770px;
+    margin-top: 85px;
+}
+
+.box-jogos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 170px;
+    height: 720px;
+}
+
+.box-jogos span{
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    margin-top: -45px
+}
+
+footer {
+    height: 337px;
+    width: 100%;
+    background-color: #302D33;
+    padding: 49px 0px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.posicionar-listas {
+    height: 100%;
+    width: 332px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    width: inherit;
+}
+
+.titulos-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 306px;
+    margin-bottom: 40px;
+}
+
+.titulos-footer span {
+    color: #fff;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.container-listas {
+    display: flex;
+    justify-content: space-around;
+    width: 400px;
+}
+
+.links-uteis {
+    padding-right: 10px;
+}
+
+.links-uteis li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px 0px 0 0;
+}
+
+.links-uteis li {
+    color: white;
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px 0px 0 0;
+}
+
+.paginas li a {
+    text-decoration: none;
+    color: white;
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px 25px 0 0;
+}
+
+.paginas li {
+    color: white;
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 12px 25px 0 0;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 490px;
+}
+
+.cadastrar {
+    height: 77px;
+    width: 362px;
+}
+
+.cadastrar span {
+    color: white;
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.box-cadastro {
+    display: flex;
+    margin-top: 10px;
+}
+
+.box-email {
+    width: 204px;
+    height: 34px;
+}
+
+.btn-cadastrar {
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #FF8500;
+    width: 151px;
+    height: 34px;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.redes-socias {
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-socias span {
+    color: white;
+     font-family: 'Titillium Web', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.cadastro-redessociais {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 355px;
+    height: 100%;
 }
